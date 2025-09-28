@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product preview card</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Preview Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f2ede9;
+    }
+
+    .card {
+      width: 320px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h2 {
+      font-size: 1.3rem;
+      margin: 0 0 8px;
+      color: #2b2b2b;
+    }
+
+    .content p {
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #d2691e;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 10px;
+      background: #d2691e;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #a0522d;
+    }
+  </style>
 </head>
 <body>
-    <div class="card">
+
+  <div class="card">
     <img src=https://www.milton.in/cdn/shop/files/DOUBLE_WALL_TEA_COFFEE_GLASS_MUG_260_ML_7_1a2f2031-c817-4dba-87c0-45b391a699c3.jpg?v=1744875194&width=1240 alt="Coffee Mug">
     <div class="content">
       <h2>Premium Ceramic Mug</h2>
@@ -15,5 +90,6 @@
       <a href="#" class="btn">Buy Now</a>
     </div>
   </div>
+
 </body>
 </html>
